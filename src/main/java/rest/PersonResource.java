@@ -35,7 +35,7 @@ public class PersonResource {
         return "{\"count\":"+count+"}";  //Done manually so no need for a DTO
     }
 
-   /* @GET
+    @GET
     @Path("{id}")
     public Response getById(@PathParam("id")long id){
         PersonDTO rdto = FACADE.getById(id);
@@ -45,7 +45,7 @@ public class PersonResource {
     @GET
     public Response getAll(){
         return Response.ok().entity(FACADE.getAll()).build();
-    }*/
+    }
 
 
     @POST
